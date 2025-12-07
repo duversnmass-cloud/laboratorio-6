@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form">
+
+            <h1>FORMULARIO MENSUALIDAD GYM</h1>
+
+            <!-- Información personal -->
+            <fieldset>
+                <legend>Información personal</legend>
+
+                <label for="Nombre">Nombre completo</label>
+                <input type="text" id="Nombre" required minlength="3" maxlength="30">
+
+                <label for="Correo">Correo electrónico</label>
+                <input type="email" id="Correo" required>
+
+                <label for="Fecha">Fecha de nacimiento</label>
+                <input type="date" id="Fecha" required>
+
+                <label for="Password">Contraseña</label>
+                <input type="password" id="Password" required minlength="7">
+            </fieldset>
+
+            <!-- Información de contacto -->
+            <fieldset>
+                <legend>Información de contacto</legend>
+
+                <label for="Telefono">Teléfono</label>
+                <input type="text" id="Telefono" required pattern="[0-9]{10}" placeholder="10 dígitos">
+
+                <label for="usuario">Nombre de usuario</label>
+                <input type="text" id="usuario" required minlength="3" maxlength="13">
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </div>
+
+    <div>
+        <img src="https://thumbs.dreamstime.com/b/logotipo-del-gimnasio-plantilla-dise%C3%B1o-centro-de-aptitud-barbell-negro-aislado-en-el-fondo-blanco-103252465.jpg" alt="Mensualidad gym">
+    </div>
+
+</body>
+</html>
